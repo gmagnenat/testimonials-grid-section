@@ -26,6 +26,30 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
+### Run the project
+
+**(1)** clone this repository  
+**(2)** cd into the folder and install the necessary packages
+
+```js
+npm install
+```
+
+**(3)**
+start the project. It will open a new window in your browser with browsersync at [http://localhost:3000](http://localhost:3000)
+
+```js
+npm start
+```
+
+live reload is activated and the changes are applied when a file is saved.
+**(4)**
+To deploy the project there is a `build` command. It will compile and minify the files in the `/public` folder.
+
+```js
+npm run build
+```
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
