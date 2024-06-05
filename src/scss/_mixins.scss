@@ -1,0 +1,29 @@
+@use "sass:color";
+@use "./variables" as *;
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin color-scheme($bg, $text) {
+  @if lightness($bg) < 50 {
+    color: $clr-white;
+    background-color: $bg;
+  } @else {
+    color: $text;
+    background-color: $bg;
+  }
+}
+
+@mixin img-border($bg) {
+  @if lightness($bg) < 50 {
+    border: 2px solid $clr-white;
+  } @else {
+    border: 2px solid $clr-moderate-violet;
+  }
+}
+
+@mixin card-styles($bg, $text) {
+  @include color-scheme($bg, $text);
+}
